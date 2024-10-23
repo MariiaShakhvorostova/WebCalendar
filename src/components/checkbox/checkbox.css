@@ -1,0 +1,41 @@
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+}
+
+.checkbox-text {
+  margin-left: 8px;
+}
+
+.checkbox-input:checked + .checkbox-span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.checkbox-span.checked .approved-icon {
+  content: url(/src/assets/imgs/icons/approved.png);
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  position: absolute;
+}

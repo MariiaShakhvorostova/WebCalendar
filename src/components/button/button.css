@@ -1,0 +1,92 @@
+.button {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  width: 63px;
+  height: 36px;
+  gap: 4px;
+  border-radius: 8px;
+  color: white;
+  background: rgba(0, 174, 28, 1);
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  border: transparent;
+}
+
+.button:hover {
+  border: 1px solid rgba(92, 225, 113, 1);
+}
+
+.button:active {
+  background-color: rgba(12, 213, 43, 1);
+}
+
+.button.disabled {
+  background: rgba(24, 119, 39, 1);
+  cursor: not-allowed;
+  color: rgba(185, 185, 185, 1);
+}
+
+.icon {
+  background: url(/src/assets/imgs/Iconplus.png);
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.grey-icon {
+  background: url(/src/assets/imgs/grey-icon.png);
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.black-icon {
+  background: url(/src/assets/imgs/black-icon.png);
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.dark-icon {
+  background: url(/src/assets/imgs/dark-icon.png);
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.longer {
+  width: 240px;
+  padding: 0 8px;
+}
+
+.secondary-button {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  width: 63px;
+  height: 36px;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid rgba(222, 223, 229, 1);
+  color: black;
+  background: rgba(255, 255, 255, 1);
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.secondary-button:hover {
+  background: rgba(239, 239, 239, 1);
+}
+
+.secondary-button:active {
+  background: rgba(224, 224, 224, 1);
+}
+
+.secondary-button.disabled {
+  border: 1px solid rgba(141, 142, 145, 1);
+  color: rgba(115, 115, 115, 1);
+  background: rgba(200, 200, 200, 1);
+}

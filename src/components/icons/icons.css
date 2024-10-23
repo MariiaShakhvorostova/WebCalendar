@@ -1,0 +1,27 @@
+.icon-img {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  border-radius: 8px;
+  background: rgba(115, 115, 115, 1);
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-name {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  font-family: Inter, serif;
+}

@@ -1,0 +1,93 @@
+.week-view {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  left: 300px;
+  width: 75%;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.week-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.week-view th,
+.week-view td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.week-view th {
+  background-color: white;
+  font-weight: bold;
+  border-top: transparent;
+}
+
+.week-view .event-cell {
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+}
+
+.week-view .event {
+  position: absolute;
+  width: 95%;
+  height: calc(100% - 2px);
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 0px;
+  left: 0px;
+  border-radius: 4px;
+}
+
+.week-view th.today {
+  background-color: white;
+  padding: 0;
+  width: 120px;
+}
+
+.week-view .today-content {
+  background-color: #dff5e2;
+  width: 105px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: calc(100% - 10px);
+}
+
+.week-view table tr:first-child {
+  border-top-left-radius: 20px;
+}
+
+.line {
+  height: 2px;
+  background: #dedfe5;
+}
+
+.line td {
+  padding: 0;
+  border: none;
+  box-shadow: 0px 1px 2px 0px #dedfe5;
+}
+
+.vertical-line {
+  width: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  background-position: center center;
+  top: -0px;
+}

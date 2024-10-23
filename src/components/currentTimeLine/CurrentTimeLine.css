@@ -1,0 +1,23 @@
+.current-time-line {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.current-time-line .line {
+  height: 1px;
+  background: red;
+  width: 100%;
+}
+
+.current-time-line .circle {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+}

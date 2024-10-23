@@ -1,0 +1,99 @@
+.inp-names {
+  font-family: Inter, sans-serif;
+  color: rgba(50, 55, 73, 1);
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.inputs {
+  font-family: Inter, sans-serif;
+  padding: 0;
+  margin: 8px 0;
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  font-size: 15px;
+  text-align: left;
+  width: 300px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.line {
+  width: 300px;
+  height: 1px;
+  background-color: rgba(115, 115, 115, 1);
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.inputs::placeholder {
+  color: rgba(115, 115, 115, 1);
+}
+
+.inputs:focus {
+  outline: none;
+}
+
+.inputs + .line {
+  background-color: rgba(115, 115, 115, 1);
+}
+
+.inputs:focus + .line {
+  background-color: rgba(50, 55, 73, 1);
+}
+
+.inputs:not(:placeholder-shown) {
+  color: rgba(50, 55, 73, 1);
+}
+
+.inputs:focus::placeholder,
+.inputs:not(:placeholder-shown)::placeholder {
+  color: white;
+}
+
+.pass-container {
+  display: flex;
+}
+
+.box-icon {
+  height: 30px;
+  position: relative;
+  left: -38px;
+  top: 30px;
+}
+
+.toggle-pass {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pass-icon {
+  cursor: pointer;
+}
+
+.disabled {
+  color: rgba(115, 115, 115, 1);
+}
+
+.disabled + .line {
+  background-color: rgba(115, 115, 115, 1);
+}
+
+.error-message {
+  color: rgba(255, 86, 32, 1);
+}
+
+.pass-line .line {
+  background-color: rgba(115, 115, 115, 1);
+}
+
+.error .line {
+  background-color: rgba(255, 86, 32, 1);
+}

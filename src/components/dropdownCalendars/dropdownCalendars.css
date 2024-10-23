@@ -1,0 +1,40 @@
+.dropdown-calendars {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #dee0e5;
+  background: white;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.calendar-option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.calendar-option:hover {
+  background: #f0f0f0;
+}
+
+.color-icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 10px;
+}

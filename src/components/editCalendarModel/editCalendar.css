@@ -1,0 +1,121 @@
+.edit-calendar-modal {
+  width: 230px;
+  height: 300px;
+  padding: 20px;
+  left: 0px;
+  box-shadow: 0px 16px 50px 0px #0000003d;
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 30px;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.edit-line {
+  height: 1px;
+  background: #dedfe5;
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  width: 230px;
+  margin: 10px;
+}
+
+.modal-header {
+  height: 25px;
+  margin: 10px;
+  width: 260px;
+}
+
+.modal-header-edit {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.title-label {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #323749;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+}
+
+.color-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-control {
+  width: 210px;
+  padding-top: 8px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #737373;
+  box-sizing: border-box;
+}
+
+.form-control input::placeholder {
+  padding: 0px;
+  padding-left: -10px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: left;
+}
+
+.close-edit-button {
+  background: url(/src/assets/imgs/black-x.png);
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+.save-button {
+  background: transparent;
+  border: transparent;
+  position: absolute;
+  top: 295px;
+  left: 180px;
+}
+
+.title-icon-container,
+.color-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title-icon {
+  position: absolute;
+  left: 10px;
+  bottom: 210px;
+  width: 16px;
+  height: 16px;
+  background: url(/src/assets/imgs/titleT-icon.png);
+}
+
+.color-icon {
+  position: absolute;
+  left: 10px;
+  bottom: 110px;
+  width: 16px;
+  height: 16px;
+  background: url(/src/assets/imgs/ic_outline-color-lens.png);
+}

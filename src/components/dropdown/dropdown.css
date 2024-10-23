@@ -1,0 +1,68 @@
+.dropdown {
+  width: 89px;
+  height: 36px;
+  border: 1px solid rgba(222, 223, 229, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(69, 69, 69, 0.25);
+}
+
+.dropdown:hover {
+  background: rgba(239, 239, 239, 1);
+  border: 1px solid rgba(222, 223, 229, 1);
+}
+
+.dropdown:active {
+  background: rgba(224, 224, 224, 1);
+  border: 1px solid rgba(222, 223, 229, 1);
+}
+
+.selected-option {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: left;
+  color: #323749;
+}
+
+.dropdown-icon {
+  top: 3px;
+  position: relative;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.options {
+  font-family: Inter, serif;
+  margin-top: 24px;
+  position: absolute;
+  top: 44px;
+  width: 80px;
+  border: 1px solid rgba(222, 223, 229, 1);
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(49, 49, 49, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.option {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: rgba(246, 246, 246, 1);
+}
+
+.option.selected-op {
+  background: rgba(227, 227, 227, 1);
+}

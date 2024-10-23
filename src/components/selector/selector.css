@@ -1,0 +1,50 @@
+.time-label {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.selector {
+  width: 88px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.time-options {
+  margin-top: 10px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  width: 88px;
+  max-height: 180px;
+  overflow-y: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(222, 224, 229, 1);
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.time-option {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.8s;
+}
+
+.time-option:hover {
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.time-option.selected-time {
+  background-color: rgba(227, 227, 227, 1);
+}
+
+.black-line {
+  border: 0.5px solid rgba(50, 55, 73, 1);
+  width: 88px;
+}

@@ -1,0 +1,23 @@
+.link {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(0, 174, 28, 1);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+
+.link.disabled {
+  color: rgba(87, 93, 88, 1);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  color: rgba(12, 213, 43, 1);
+}
