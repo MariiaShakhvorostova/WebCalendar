@@ -11,27 +11,11 @@ import useAppStore from "./useAppStore";
 import { auth } from "../firebase";
 
 function App() {
-  const { user, setUser, fetchInitialData } = useAppStore();
-
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(async (user) => {
-      setUser(user);
-      if (user) {
-        await fetchInitialData(user.uid);
-      }
-    });
-
-    return () => unsubscribe();
-  }, [setUser, fetchInitialData]);
-
   return (
     <Router basename="/WebCalendar">
       <Routes>
         <Route path="/welcome" element={<WelcomePage />} />
-        <Route
-          path="/"
-          element={user ? <AppContent /> : <Navigate to="/welcome" />}
-        />
+        <Route path="/" element={<AppContent />} />
       </Routes>
     </Router>
   );
