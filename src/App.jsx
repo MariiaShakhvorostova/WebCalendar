@@ -25,7 +25,7 @@ function App() {
   }, [setUser, fetchInitialData]);
 
   return (
-    <Router>
+    <Router basename="/WebCalendar">
       <Routes>
         <Route path="/welcome" element={<WelcomePage />} />
         <Route
